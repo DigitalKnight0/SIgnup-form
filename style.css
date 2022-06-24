@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'My Font';
+    src: url(./Rubik_Moonrocks/RubikMoonrocks-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    font-family: Arial, sans-serif;
+ 
+}
+
+.hero{
+    background-image: url(./images/ryunosuke-kikuno-OQR3sFwUjtg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    font-family: 'My Font';
+}
+
+.logo{
+    position: relative;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.473);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-text{
+    color: white;
+    font-size: 3vw;
+    position: relative;
+    right: 10px;
+}
+
+.content{
+    flex: 2;
+    background: linear-gradient(90deg, rgba(241, 135, 185, 0.541), rgba(202, 32, 32, 0.726));
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+.logo-img{
+    height: 7vw;
+    width: 7vw;
+    position: relative;
+    top: 10px;
+}
+
+.header{
+    font-size: 1.2rem;
+    padding-left: 8px;
+}
+
+.header>p:first-child{
+    margin-bottom: 20px;
+
+}
+
+
+form{
+    font-family: 'Courier New', monospace; 
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-heading{
+    font-size: 1.1rem;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.form-content{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 251, 255, 0.171);
+    border-radius: 5px;
+}
+
+.submit-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.form-controls{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-content: center;
+    padding-left: 8px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: max(300px, 40%);
+    align-items: flex-start;
+    gap: 2px;
+}
+
+input{
+    height: 25px;
+    background-color: transparent;
+    border-radius: 7px;
+    -moz-box-shadow: 0 0 5px #fc0069;
+    -webkit-box-shadow: 0 0 5px #fc0069;
+    box-shadow: 0 0 5px #fc0069;
+    border: none;
+    
+}
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+    border: rgb(47, 184, 226) 2px solid;
+    opacity: 0.8;
+}
+
+input:focus:invalid, .error{
+    outline: none;
+    box-shadow: none;
+    border: rgb(226, 47, 47) 2px solid;
+}
+
+
+button{
+    padding: 10px;
+    width: 200px;
+    font-size: 1.1rem;
+    font-style: italic;
+    border-radius: 5px;
+    background-color: rgb(192, 47, 91);
+    color: white;
+}
+
+button:hover{
+    opacity: 0.6;
+}
+
+.submit-content > p{
+    font-size: 0.9rem;
+
+}
+
+
+@media only screen and (max-width: 991px) {
+    .form-wrapper{
+        font-size: 0.8rem;
+        gap: 0px;
+    }
+
+    .header{
+        font-size: 1rem;
+        margin-top: -50px;
+    }
+}
